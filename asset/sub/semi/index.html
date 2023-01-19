@@ -1,0 +1,459 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>새미네부엌</title>
+    <style>
+        @font-face {
+    font-family: 'GmarketSansMedium';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/GmarketSansMedium.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+        }
+        body {
+            font-family: 'GmarketSansMedium';
+        }
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        li {
+            list-style: none;
+            
+        }
+        a {
+            text-decoration: none;
+            color: #000;
+        }
+        header {
+            height: 100px;
+            border-bottom: 1px solid #eee
+        }
+        header .inner  {
+            width: calc(100% - 180px);
+            height: 100%;
+            display: flex;
+            justify-content: space-between;
+            margin: 0 auto;
+            align-items: center;
+        }
+        header .inner ul {
+            display: flex;
+            align-items: center;
+        }
+        header .inner nav ul li {
+            margin: 0 30px;
+        }
+
+        .main_visual {
+            width: calc(100% - 180px);
+            margin: 0 auto;
+        }
+        .main_visual img {
+            width: 100%;
+        }
+        /* cont01 */
+        .cont01 {
+            padding: 80px 0;
+        }
+        .cont01 .inner {
+            width: 1440px;
+            margin: 0 auto;
+        }
+        .cont01 .inner .list div {
+            padding: 0 0 0 10px;
+         }
+        .cont01 .inner h3 {
+        
+            font-size: 26px;
+            font-weight: bold;
+            margin-bottom: 40px;
+        }
+        .cont01 .inner .list {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+        }
+        .cont01 .inner .list .item figure {
+            overflow: hidden;
+            border-radius: 25px;
+            
+        }
+        .cont01 .inner .list .item figure:hover img {
+            transform: scale(1.2)
+
+        }
+        .cont01 .inner .list .item figure img {
+            width: 340px;
+            height: 340px;
+            overflow: hidden;
+            vertical-align: middle;
+            transition: 0.7s;
+            
+        }
+        .cont01 .inner .list .item div ul li {
+            display: inline-block;
+            padding: 10px;
+        }
+        .cont01 .inner .list .item div ul li img {
+            width: 15px;
+            height: 15px;
+        }
+        .cont01 .inner .list .item div h4 {
+            font-size: 22px;
+            margin-top: 20px;
+        }
+        .cont01 .inner .list .item div ul li {
+            font-size: 15px;
+        }
+
+        /* cont02*/
+        .cont02 {
+            padding: 80px 0;
+        }
+        .cont02 .inner {
+            width: 1440px;
+            margin: 0 auto;
+        }
+        .cont02 .inner div {
+            display: flex;                     
+        }
+        .cont02 .inner div figure img {
+            width: 850px;
+            height: 460px;
+        }
+        .cont02 .inner div .text {
+            width: 590px;
+            height: 460px;
+            background-color: #F8F3F3;
+            padding: 50px;
+            flex-wrap: wrap;
+            border-radius: 0 25px 25px 0;
+            
+        }
+        .cont02 .inner div .text ul {
+            display: flex;
+            margin-bottom: 200px;
+            margin-right: 30px;
+            
+        }
+        .cont02 .inner div .text ul li {
+            padding: 10px;
+        }
+        .cont02 .inner div .text ul li img {
+            width: 18px;
+            height: 18px;
+        }
+        .cont02 .inner h3 {
+            font-size: 26px;
+            font-weight: bold;
+            margin-bottom: 40px;
+        }
+        .cont02 .inner div .text ul li:nth-child(3) {
+            border: 1px solid #000;
+            width: 180px;
+            height: 70px;
+            border-radius: 50px;
+            text-align: center;
+            line-height: 55px;
+            margin-top: 180px;
+            margin-right: 1        
+        }
+        /* cont03 */
+        .cont03 .inner {
+            width: 1440px;
+            display: flex;
+            justify-content: space-between;
+            margin: 0 auto;
+        }
+        .cont03 .inner .item {
+            background-color: #F8F3F3;
+            width: 340px;
+            height: 230px;  
+            border-radius: 25px;       
+        }
+        .cont03 .inner .item h4 {
+            font-size: 18px;
+            margin-bottom: 110px;
+        }
+        .cont03 .inner .item div {
+          padding: 40px;  
+        }
+        .cont03 .inner .item div ul {
+            
+            display: flex;
+        }
+        .cont03 .inner .item div ul li {
+            padding: 10px
+        }
+        .cont03 .inner .item div ul li img {
+            width: 18px;
+            height: 18px;
+        }
+        
+        footer {
+            height: 160px;
+            margin-top: 100px;
+        }
+        footer .inner .text1 {
+            border-top: 5px solid #F8F3F3;
+            border-bottom: 5px solid #F8F3F3;
+        }
+       
+        footer .inner .text1 ul li {
+            margin: 40px;
+            display: inline-block;
+            
+        }
+        footer .inner .text2 ul li {
+            display: inline-block;
+            margin: 40px;
+        }
+        
+
+        
+    </style>
+</head>
+<body>
+    <header>
+        <div class="inner">
+            <h1><a href="#"><img src="img/logo1.png" alt="로고"></a></h1>
+            <nav>
+                <ul>
+                    <li><a href="#">요리 상담소</a></li>
+                    <li><a href="#">요리법 연구소</a></li>
+                    <li><a href="#">요리해요</a></li>
+                    <li><a href="#">맛있는 추억을 그리다</a></li>
+                    <li><a href="#"><img src="img/semie-wow.svg" alt="와우">이벤트</a></li>          
+                </ul>
+            </nav>
+                <ul class="right menu">
+                    <li><a href="#"><img src="img/icons8-수색-24.png" alt=""></a></li>
+                    <li><a href="#"><img src="img/icons8-사람-남자-32.png"></a></li>
+                </ul>
+        </div>  
+    </header>
+    <section class="main_visual">
+        <img src="img/title.png" />
+    </section>
+    <!-- 메인비주얼 -->
+    <section class="cont01">
+        <div class="inner">
+            <h3>오늘의 부엌</h3>
+            <div class="list">
+                <div class="item">
+                    <figure>
+                        <img src="img/01.png" alt="타라곤치킨"/>
+                    </figure>
+                    <div>
+                        <h4>낯선 향신료과 친해지기 쉬운 </br>"타라곤 치킨"</h4>
+                        <ul>
+                            <li>
+                                <img src="img/icons8-하트-50.png"/>
+                                <span>27</span>
+                            </li>
+                            <li>
+                                <img src="img/icons8-이야기-48.png"/>
+                                <span>46</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+           
+        <!-- 아이템1 -->
+                <div class="item">
+                    <figure>
+                        <img src="img/02.png" alt="청국장"/>
+                    </figure>
+                    <div>
+                        <h4>엄마가 만든 청국장으로 끓인</br> 청국장찌개</h4>
+                        <ul>
+                            <li>
+                                <img src="img/icons8-하트-50.png"/>
+                                <span>37</span>
+                            </li>
+                            <li>
+                                <img src="img/icons8-이야기-48.png"/>
+                                <span>32</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+          
+        <!-- 아이템2 -->
+                <div class="item">
+                    <figure>
+                        <img src="img/03.png" alt="까르보나라"/>
+                    </figure>
+                    <div>
+                        <h4>ㄱㄱㅑ~~ 우리 큰 아들 최애 </br>까르보나라! 스파게티!</h4>
+                        <ul>
+                            <li>
+                                <img src="img/icons8-하트-50.png"/>
+                                <span>23</span>
+                            </li>
+                            <li>
+                                <img src="img/icons8-이야기-48.png"/>
+                                <span>45</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+          
+        <!-- 아이템3 -->
+                <div class="item">
+                    <figure>
+                        <img src="img/04.png" alt="굴"/>
+                    </figure>
+                    <div>
+                        <h4>겨울 굴 맛! 꿀 맛!</h4>
+                        <ul>
+                            <li>
+                                <img src="img/icons8-하트-50.png"/>
+                                <span>22</span>
+                            </li>
+                            <li>
+                                <img src="img/icons8-이야기-48.png"/>
+                                <span>16</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section><!-- 아이템4 -->
+
+
+
+
+
+    <section class="cont02">
+        <div class="inner">
+            <h3>모든 고민, 요리 상담소에서 한큐에 해결!</h3>
+            <div>
+                <figure>
+                    <img src="img/11.png"/>
+                </figure>
+                <div class="text">
+                    <h3>다들 뭐 먹지? 다른 사람의 식단이 궁금하다면!</h3>
+                    <ul>
+                        <li>
+                            <img src="img/icons8-하트-50.png"/>
+                            <span>22</span>
+                        </li>
+                        <li>
+                            <img src="img/icons8-이야기-48.png"/>
+                            <span>16</span>
+                        </li>
+                        <li><a href="#">자세히보기</a></li>
+                    </ul>
+                    
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+
+<!-- cont03 -->
+
+    <section class="cont03">
+        <div class="inner">
+            <div class="item">
+                <div>
+                    <h4>밑반찬이 힘들어요</h4>
+                    <ul>
+                        <li>
+                            <img src="img/icons8-하트-50.png"/>
+                            <span>22</span>
+                        </li>
+                        <li>
+                            <img src="img/icons8-이야기-48.png"/>
+                            <span>16</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+             
+            <div class="item">
+                <div>
+                    <h4>얼어버린 양배추 ㅠㅠ</h4>
+                    <ul>
+                        <li>
+                            <img src="img/icons8-하트-50.png"/>
+                            <span>26</span>
+                        </li>
+                        <li>
+                            <img src="img/icons8-이야기-48.png"/>
+                            <span>16</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+             
+            <div class="item">
+                <div>
+                    <h4>미숫가루 처치법(?)</h4>
+                    <ul>
+                        <li>
+                            <img src="img/icons8-하트-50.png"/>
+                            <span>35</span>
+                        </li>
+                        <li>
+                            <img src="img/icons8-이야기-48.png"/>
+                            <span>55</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+              
+            <div class="item">
+                <div>
+                    <h4>그릭요거트 맛있게 먹는법</h4>
+                    <ul>
+                        <li>
+                            <img src="img/icons8-하트-50.png"/>
+                            <span>16</span>
+                        </li>
+                        <li>
+                            <img src="img/icons8-이야기-48.png"/>
+                            <span>12</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>      
+    </section>
+
+    <footer>
+        <div class="inner">
+            <div class="text1">
+                <ul>
+                    <a href="#"><li>맛추억 문의</li></a>
+                    <a href="#"><li>이용약관</li></a>
+                    <a href="#"><li>개인정보처리방침</li></a>
+                    <a href="#"><li>1:1문의</li></a>
+                </ul>
+            </div>
+            <div class="text2">
+                <ul>
+                    <li>샘표식품(주)</li>
+                    <li>주소:서울특별시 중구 충무로2 (우편번호: 04557)</li>
+                    <li>맛추억 운영 사무국: 02-3393-5645~7 (평일 9:00~17:00 / 점심시간 12:30~13:30)</li>
+                    <li>Cropyrightⓒ샘표식품, All Rights Reserved.</li>
+                    
+                </ul>
+            </div>
+            
+        </div>
+    </footer>
+    
+
+    
+    
+</body>
+</html>
