@@ -3,6 +3,17 @@
 /* header */
 header {
     height: 100px;
+    position: relative;
+    z-index: 9;
+}
+
+header.on {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: rgba(51, 51, 51, 0.432);
+    color: #fff;
 }
 
 header .inner {
@@ -10,19 +21,31 @@ header .inner {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    margin: 0 auto;
 }
 
 header .inner ul li {
     display: inline-block;
 }
 
+header .inner nav ul li.on {
+    font-weight: 1000;
+}
+
+/* #FF0000유튜브색 #FAE100카톡색 */
 header .inner nav ul li {
     font-size: 20px;
     margin: 0 35px;
 }
 
+header .inner nav ul li:hover {
+    font-weight: 1000;
+}
+
 header .inner .right_menu li :nth-child(1) {
     margin-right: 20px;
+
+
 }
 
 /* main_visual */
@@ -36,6 +59,29 @@ header .inner .right_menu li :nth-child(1) {
     width: 100%;
     height: 100%;
     object-fit: cover;
+}
+
+.main_visual h3 {
+    font-size: 60px;
+    font-weight: 900;
+    color: #fff;
+    -webkit-text-stroke: 1px red;
+    white-space: nowrap;
+    /* 텍스트를 한 줄로 나열 */
+    animation: text 60s infinite linear;
+    /* 애니메이션 : 이름 60초 무한반복 일정한속도 */
+}
+
+
+
+@keyframes text {
+    0% {
+        transform: translateX(0);
+    }
+
+    100% {
+        transform: translateX(-100%);
+    }
 }
 
 /* video */
@@ -191,12 +237,27 @@ header .inner .right_menu li :nth-child(1) {
 .web .list .item figure {
     width: 100%;
     height: 370px;
+    overflow: hidden;
+}
+
+.web .list .item figure:hover img {
+    animation: slide 15s infinite linear;
+}
+
+@keyframes slide {
+    0% {
+        transform: translateY(0);
+    }
+
+    100% {
+        transform: translateY(-100%);
+    }
 }
 
 .web .list .item figure img {
     width: 100%;
-    height: 100%;
     object-fit: cover;
+
 }
 
 .web .list .item .info {
@@ -246,12 +307,24 @@ header .inner .right_menu li :nth-child(1) {
 .graphic .list .item {
     width: calc(100% / 4 - 15px);
     margin-bottom: 30px;
+
+}
+
+.graphic .list .item a figure {
+    overflow: hidden;
+    height: 340px;
+    width: 100%;
 }
 
 .graphic .list .item a img {
     height: 340px;
     width: 100%;
     object-fit: cover;
+}
+
+.graphic .list .item:hover img {
+    transform: scale(1.2);
+    transition: 0.7s;
 }
 
 .graphic .list .item .info h4 {
@@ -319,6 +392,89 @@ header .inner .right_menu li :nth-child(1) {
     color: #fff;
 }
 
+
+/* btn */
+.side_btn {
+    position: fixed;
+    left: 30px;
+    top: 50%;
+    transform: translateY(-50%);
+    
+}
+.side_btn .inner {
+    width: auto;
+}
+.side_btn ul li.on {
+    color: red;
+    
+
+}
+
+.side_btn ul li {
+    position: relative;
+    margin: 10px 0;
+    font-weight: 900;
+    font-size: 20px;
+    color: #fff;
+    width: auto;
+    
+}
+
+.side_btn ul li::after {
+    content: '';
+    width: 5px;
+    height: 5px;
+    border-radius: 50%;
+    background-color: red;
+    position: absolute;
+    left: -7px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.side_btn ul li:hover::before {
+    width: 100%;
+}
+
+.side_btn ul li span {
+    font-size: 16px;
+    color: #333;
+    -webkit-text-stroke: 0;
+    font-weight: 400;
+    display: none;
+}
+
+.side_btn ul li:hover span {
+    display: block;
+}
+
+.side_btn ul li a {
+    display: flex;
+    align-items: center;
+    -webkit-text-stroke: 0.7px red;
+}
+
+.side_btn ul li::before {
+    content: attr(data-text);
+    width: 0;
+    height: 100%;
+    /* background-color: red; */
+    color: red;
+    position: absolute;
+    left: 0;
+    top: 0;
+    white-space: nowrap;
+    overflow: hidden;
+    transition: 0.5s;
+}
+
+
+
+
+
+
+
+
 /* footer */
 footer {
     padding: 70px 0;
@@ -341,7 +497,7 @@ footer ul li {
     border-radius: 40px;
 }
 
-footer ul li a{
+footer ul li a {
     display: block;
 }
 
