@@ -59,11 +59,16 @@ body {
     position: relative;
 }
 
+
+.video .inner .list .list_in .swiper .swiper-wrapper .swiper-slide .info ul li:nth-child(1)::before {
+    background-color: #FF0000;
+}
+
 .btn li::before {
     content: '';
     width: 0%;
     height: 100%;
-    background-color: red;
+    background-color: blue;
     position: absolute;
     left: 0;
     top: 0;

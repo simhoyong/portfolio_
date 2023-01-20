@@ -20,11 +20,14 @@
     <link href="css/common.css" rel="stylesheet" />
     <link href="css/main.css" rel="stylesheet" />
 
+    <!-- aos -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
 </head>
 
 <body>
     <header>
-        <div class="inner">
+        <div class="inner" data-aos="fade-right">
             <h1>
                 <a href="#main_visual">이미지<!-- <img src=""> --></a>
             </h1>
@@ -43,25 +46,20 @@
 
         </div><!-- inner end -->
     </header>
-    <section class="main_visual" id="main_visual"> <!-- https://placeholder.com/ -->
+    <section class="main_visual" id="main_visual" data-aos="zoom-in-up"> <!-- https://placeholder.com/ -->
         <img src="https://via.placeholder.com/1920x960" alt="" />
-        <h3>심호용 심호용 심호용 심호용 심호용 심호용 심호용 심호용
-            심호용 심호용 심호용 심호용 심호용 심호용 심호용 심호용
-            심호용 심호용 심호용 심호용 심호용 심호용 심호용 심호용
-            심호용 심호용 심호용 심호용 심호용 심호용 심호용 심호용
-            심호용 심호용 심호용 심호용 심호용 심호용 심호용 심호용
-            심호용 심호용 심호용 심호용 심호용 심호용 심호용 심호용 </h3>
+        <h3>심호용 심호용</h3>
 
     </section><!-- main_visual end -->
 
     <section class="video" id="video">
         <div class="inner">
-            <div class="title">
+            <div class="title" data-aos="fade-right">
                 <h3>영상편집 / 모션그래픽</h3>
                 <p>프리미어프로, 애프터이펙트 등을 사용하여 영상편집/모션그래픽 진행</p>
             </div><!-- title end -->
 
-            <ul class="tab_menu">
+            <ul class="tab_menu" data-aos="fade-right">
                 <li class="on">게임</li>
                 <li>홍보영상</li>
                 <li>브이로그</li>
@@ -76,7 +74,7 @@
                     <div class="swiper mySwiper">
                         <div class="swiper-wrapper">
                             <div class="swiper-slide">
-                                <div class="youtube_wrap">
+                                <div class="youtube_wrap" data-aos="fade-right">
                                     <div class="youtube">
                                         <iframe width="560" height="315" src="https://www.youtube.com/embed/2Kff0U8w-aU"
                                             title="YouTube video player" frameborder="0"
@@ -84,7 +82,7 @@
                                             allowfullscreen></iframe>
                                     </div><!-- youtube end -->
                                 </div><!-- youtube_wrap end -->
-                                <div class="info">
+                                <div class="info" data-aos="fade-left">
                                     <h4>OMG</h4>
                                     <p>디자인, 연출, 기획, 촬영, 특수효과</p>
                                     <dl>
@@ -110,7 +108,7 @@
                                             allowfullscreen></iframe>
                                     </div><!-- youtube end -->
                                 </div><!-- youtube_wrap end -->
-                                <div class="info">
+                                <div class="info" data-aos="fade-left">
                                     <h4>OMG</h4>
                                     <p>디자인, 연출, 기획, 촬영, 특수효과</p>
                                     <dl>
@@ -128,9 +126,9 @@
                                 </div>
                             </div><!-- swiper-slide end / 2 -->
                         </div>
-                        <div class="swiper-button-next"></div>
-                        <div class="swiper-button-prev"></div>
-                        <div class="swiper-pagination"></div>
+                        <div class="swiper-button-next" data-aos="fade-right"></div>
+                        <div class="swiper-button-prev" data-aos="fade-right"> </div>
+                        <div class="swiper-pagination" data-aos="fade-right"></div>
                     </div>
 
                 </div><!-- list_in end 1/ 게임 -->
@@ -205,14 +203,14 @@
     </section><!-- video end -->
 
     <section class="web" id="web">
-        <div class="inner">
+        <div class="inner" data-aos="fade-up">
             <div class="title">
                 <h3>웹디자인 / 웹퍼블리싱</h3>
                 <p>포토샵, 일러스트레이터, 비주얼스튜디오코드를
                     이용하여 웹사이트 구현</p>
             </div><!-- title end -->
             <div class="list">
-                <div class="item">
+                <div class="item" data-aos="zoom-in-right">
                     <figure>
                         <img src="img/dakbro.png" alt="닭형" />
                     </figure>
@@ -236,7 +234,7 @@
                         </ul><!-- btn end -->
                     </div><!-- info end -->
                 </div><!-- item 1 end -->
-                <div class="item">
+                <div class="item" data-aos="zoom-in-left">
                     <figure>
                         <img src="img/semi.png" alt="새미네부엌" />
                     </figure>
@@ -264,22 +262,25 @@
     </section><!-- web end -->
 
     <section class="graphic" id="graphic">
-        <div class="inner">
+        <div class="inner" data-aos="zoom-in-up">
             <div class="title">
                 <h3>그래픽디자인</h3>
                 <p>2D, 3D그래픽을 포토샵, 일러스트레이터를 이용하며 디자인을
                     제작하였습니다.</p>
             </div><!-- title -->
-            <div class="list">
+            <div class="list" data-aos="zoom-in">
                 <div class="item">
                     <a href="img/cake.jpg" data-fancybox="images">
                         <figure>
                             <img src="img/cake.jpg" />
                         </figure>
-                        <div class="info">
+                        <div class="text">
+                            <p>크리스마스 케이크 디자인</p>
+                        </div>
+                        <!--                         <div class="info">
                             <h4>크리스마스 케이크 디자인</h4>
                             <p>포토샵</p>
-                        </div><!-- info -->
+                        </div --><!-- info -->
                     </a><!-- fancybox3 -->
                 </div><!-- item end 1 -->
                 <div class="item">
@@ -287,10 +288,13 @@
                         <figure>
                             <img src="img/donutevent.png" />
                         </figure>
-                        <div class="info">
+                        <div class="text">
+                            <p>크리스마스 케이크 디자인</p>
+                        </div>
+                        <!--                         <div class="info">
                             <h4>도너츠 이벤트 디자인</h4>
                             <p>포토샵</p>
-                        </div><!-- info -->
+                        </div> --><!-- info -->
                     </a><!-- fancybox3 -->
                 </div><!-- item end 2 -->
                 <div class="item">
@@ -298,10 +302,13 @@
                         <figure>
                             <img src="img/ikea.jpg" />
                         </figure>
-                        <div class="info">
+                        <div class="text">
+                            <p>크리스마스 케이크 디자인</p>
+                        </div>
+                        <!--                         <div class="info">
                             <h4>이케아 이벤트 디자인</h4>
                             <p>포토샵</p>
-                        </div><!-- info -->
+                        </div> --><!-- info -->
                     </a><!-- fancybox3 -->
                 </div><!-- item end 3 -->
                 <div class="item">
@@ -309,10 +316,13 @@
                         <figure>
                             <img src="img/flower.png" />
                         </figure>
-                        <div class="info">
+                        <div class="text">
+                            <p>크리스마스 케이크 디자인</p>
+                        </div>
+                        <!--                        <div class="info">
                             <h4>마트리카리아 효능 디자인</h4>
                             <p>포토샵</p>
-                        </div><!-- info -->
+                        </div> --><!-- info -->
                     </a><!-- fancybox3 -->
                 </div><!-- item end 4 -->
                 <div class="item">
@@ -320,10 +330,13 @@
                         <figure>
                             <img src="img/rabbit.gif" />
                         </figure>
-                        <div class="info">
+                        <div class="text">
+                            <p>크리스마스 케이크 디자인</p>
+                        </div>
+                        <!--                         <div class="info">
                             <h4>토끼 모션 디자인</h4>
                             <p>포토샵</p>
-                        </div><!-- info -->
+                        </div> --><!-- info -->
                     </a><!-- fancybox3 -->
                 </div><!-- item end 5 -->
                 <div class="item">
@@ -331,10 +344,13 @@
                         <figure>
                             <img src="img/banner04.png" />
                         </figure>
-                        <div class="info">
+                        <div class="text">
+                            <p>크리스마스 케이크 디자인</p>
+                        </div>
+                        <!--                         <div class="info">
                             <h4>노트북 이벤트 디자인</h4>
                             <p>포토샵</p>
-                        </div><!-- info -->
+                        </div> --><!-- info -->
                     </a><!-- fancybox3 -->
                 </div><!-- item end 6 -->
                 <div class="item">
@@ -342,10 +358,13 @@
                         <figure>
                             <img src="img/travel.jpg" />
                         </figure>
-                        <div class="info">
+                        <div class="text">
+                            <p>크리스마스 케이크 디자인</p>
+                        </div>
+                        <!--                         <div class="info">
                             <h4>항공권 디자인</h4>
                             <p>포토샵</p>
-                        </div><!-- info -->
+                        </div> --><!-- info -->
                     </a><!-- fancybox3 -->
                 </div><!-- item end 7 -->
                 <div class="item">
@@ -353,10 +372,13 @@
                         <figure>
                             <img src="img/banner.jpg" />
                         </figure>
-                        <div class="info">
+                        <div class="text">
+                            <p>크리스마스 케이크 디자인</p>
+                        </div>
+                        <!--                         <div class="info">
                             <h4>배너디자인</h4>
                             <p>포토샵</p>
-                        </div><!-- info -->
+                        </div> --><!-- info -->
                     </a><!-- fancybox3 -->
                 </div><!-- item end 8 -->
             </div><!-- list end -->
@@ -365,15 +387,15 @@
 
     <section class="profile" id="profile">
         <div class="inner">
-            <div class="title">
+            <div class="title" data-aos="fade-right">
                 <h3>나의소개</h3>
                 <p>경력, 이력, 스킬을 공유합니다.</p>
             </div><!-- title end -->
             <div class="list">
                 <figure>
-                    <img src="https://via.placeholder.com/400" alt="" />
+                    <img src="https://via.placeholder.com/400" alt="" data-aos="flip-left" />
                 </figure>
-                <div class="info">
+                <div class="info" data-aos="fade-left">
                     <ul>
                         <li><strong>이름</strong></li>
                         <li>심호용</li>
@@ -410,7 +432,7 @@
     </section><!-- profile end -->
 
     <section class="side_btn">
-        <div class="inner">
+        <div class="inner" data-aos="zoom-in-right">
             <ul>
                 <li data-text="홈"><a href="#main_visual">홈</a></li>
                 <li data-text="영상편집/모션그래픽"><a href="#video">영상편집/모션그래픽</a></li>
@@ -422,7 +444,7 @@
     </section>
 
     <footer>
-        <ul>
+        <ul data-aos="fade-up">
             <li><a href="">유튜브채널</a></li>
             <li><a href="">지원서 다운로드</a></li>
         </ul>
@@ -431,7 +453,8 @@
             사용된 일부 이미지 및 폰트 등은 별도의 출처가 있음을 밝힙니다.
         </P>
     </footer>
-
+    <!-- aos -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 
     <!-- cdnjs.com / 제이쿼리 라이브러리 -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.3/jquery.min.js"
@@ -608,7 +631,11 @@
                 $('header').removeClass('on');
             }
         });
+
+        AOS.init();
     </script>
+
+
 
 
 </body>
