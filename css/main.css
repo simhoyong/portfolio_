@@ -62,8 +62,8 @@ header .inner .right_menu li:nth-child(2) {
 
 /* main_visual */
 .main_visual {
-    width: 1920px; /* calc(100% - 200px); */
-    height: 800px;/*  calc(100vh - 100px); */
+    width: calc(100% - 200px);
+    height: calc(100vh - 100px);
     margin: 0 auto;
 }
 
